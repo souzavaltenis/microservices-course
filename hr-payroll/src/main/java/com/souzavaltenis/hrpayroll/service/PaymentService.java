@@ -1,6 +1,6 @@
 package com.souzavaltenis.hrpayroll.service;
 
-import com.souzavaltenis.hrpayroll.feignclients.WorkerFeignClient;
+import com.souzavaltenis.hrpayroll.feignclient.WorkerFeignClient;
 import com.souzavaltenis.hrpayroll.model.Payment;
 import com.souzavaltenis.hrpayroll.model.Worker;
 import org.springframework.beans.factory.annotation.Autowired;

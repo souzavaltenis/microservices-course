@@ -1,4 +1,4 @@
-package com.souzavaltenis.hrpayroll.feignclients;
+package com.souzavaltenis.hrpayroll.feignclient;
 
 import com.souzavaltenis.hrpayroll.model.Worker;
 import org.springframework.cloud.openfeign.FeignClient;
