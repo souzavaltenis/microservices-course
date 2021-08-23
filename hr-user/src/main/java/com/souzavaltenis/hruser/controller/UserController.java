@@ -21,7 +21,11 @@ public class UserController {
 
     @GetMapping("/search")
     public ResponseEntity<User> findByEmail(@RequestParam String email){
-        User user = userService.findByEmail(email);
-        return ResponseEntity.ok(user);
+        try {
+            User user = userService.findByEmail(email);
+            return ResponseEntity.ok(user);
+        }catch(RuntimeException e){
+            return ResponseEntity.notFound().build();
+        }
     }
 }
